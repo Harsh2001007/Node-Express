@@ -18,9 +18,8 @@ app.get("/profile/:profilename", (req, res) => {
 });
 
 app.get("/author/:authorname/:authorId", (req, res) => {
-  res.send(
-    `the author is ${req.params.authorname} and this doc is ${req.params.authorId}`
-  );
+  const { authorname, authorId } = req.params;
+  res.send(`the author is ${authorname} and this doc is ${authorId}`);
 });
 
 app.listen(5001, () => {
