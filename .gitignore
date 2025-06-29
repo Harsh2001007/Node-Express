@@ -1,6 +1,7 @@
 # Node modules
 node_modules/
 Revision/node_modules/
+TodoApp/node_modules/
 
 # Logs
 logs/
